@@ -28,8 +28,6 @@ requirements:
     - voluptuous
 
 test:
-  imports:
-    - aiida_pythonjob
   commands:
     - pip check
   requires:
