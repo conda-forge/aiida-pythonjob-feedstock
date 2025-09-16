@@ -28,10 +28,10 @@ requirements:
     - voluptuous
 
 test:
-  imports:
-    - aiida_pythonjob
   commands:
     - pip check
+    - verdi presto --profile-name test
+    - python -c "import aiida_pythonjob"
   requires:
     - pip
     - python {{ python_min }}
