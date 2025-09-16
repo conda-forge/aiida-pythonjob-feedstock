@@ -1,5 +1,5 @@
 {% set name = "aiida-pythonjob" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/aiida_pythonjob-{{ version }}.tar.gz
-  sha256: 44282f5e4abb9b14c6abcf893b3edb2193f550b769b634f0cd1d232c2754d2e4
+  sha256: b74a1a943e4675bec87edd32689396985f79bba42264e5534291a1edd26ebc27
 
 build:
   noarch: python
