@@ -1,5 +1,5 @@
 {% set name = "aiida-pythonjob" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/aiida_pythonjob-{{ version }}.tar.gz
-  sha256: 3e6b9a86c0b4f334c32be1d228ce21bc5bf1c40ba8e688b03228bf5b788dbdb0
+  sha256: 6d39ec88a3fd0264552a2744fa1830793f68b7e935d024f5d2461f46851dcd84
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - hatchling
     - pip
   run:
-    - node-graph >=0.3.0
+    - node-graph >=0.3.9
     - ase
     - python >={{ python_min }}
     - aiida-core >=2.3,<3
