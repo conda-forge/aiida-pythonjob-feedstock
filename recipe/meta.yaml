@@ -1,5 +1,5 @@
 {% set name = "aiida-pythonjob" %}
-{% set version = "0.4.6" %}
+{% set version = "0.4.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/aiida_pythonjob-{{ version }}.tar.gz
-  sha256: 267cd63155459b0ac70956bf99cbad53acc6e8669aed3d370bfdba20c9645d84
+  sha256: 15e25ad9bfcca65c6d1a932f8642c44a8f6ca53aed5d8a826e142e3758886416
 
 build:
   noarch: python
@@ -26,6 +26,7 @@ requirements:
     - aiida-core >=2.7.1,<3
     - cloudpickle
     - voluptuous
+    - plumpy <=0.25.0
 
 test:
   commands:
